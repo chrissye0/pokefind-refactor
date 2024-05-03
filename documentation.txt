@@ -1,0 +1,2 @@
+* What language you coded in: Typescript
+* Code changes implemented: I converted my project from Vanilla JS to Typescript. I added types and divided my code into various TS files depending on their primary functionality. In doing so, I made use of modules and import and export functions. By sharing variables and functions across files, I also made my code less redundant. I bundled and transpiled my code to ES5 and made a few changes in the process, including replacing the .includes array method with the .indexOf array method.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - Pokéfind</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>PokéFind</h1>
+    </header>
+        <div class="widgets">
+            <label>
+                <input type="radio" name="search" value="name" checked />Name Search
+            </label>
+            <label>
+                <input type="radio" name="search" value="type" />Type Search
+            </label>
+        </div>
+    <p>
+    </p>
+    <div class="widgets">
+        <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="pikachu" />
+    </div>
+
+    <div id="checkboxes">
+    </div>
+
+    <div class="widgets">
+        <button type="button" id="search">Find that Pokémon!</button>
+    </div>
+    <div id="status">Ready to Search!</div>
+    <hr>
+
+    <h2>Pokémon</h2>
+    <div id="content">
+
+    </div>
+    <button type="button" id="previous">Previous</button>
+    <button type="button" id="next">Next</button>
+</body>
+
+</html>

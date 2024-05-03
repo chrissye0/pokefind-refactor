@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW3 Pokéfind Refactor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar has-shadow is-white">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item" href="about.html">
+        <i class="fas fa-paw"></i>
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="nav-links">
+      <a class="navbar-item" href="about.html">
+        About
+      </a>
+
+      <a class="navbar-item has-text-weight-bold" href="index.html">
+        App
+      </a>
+    </div> <!-- end navbar-start -->
+  </nav>
+  <header>
+    <h1 class="is-size-1 has-background-danger has-text-light has-text-centered">PokéFind</h1>
+  </header>
+
+  <div class="widgets has-text-centered mt-5">
+    <label>
+      <input type="radio" name="search" value="name" checked>Name Search
+    </label>
+    <label>
+      <input type="radio" name="search" value="type">Type Search
+    </label>
+  </div>
+  <p class="is-size-5 has-text-danger has-text-centered mt-5">
+  </p>
+  <div class="widgets">
+    <input class="input is-centered has-text-centered" id="searchterm" type="text" size="20" maxlength="20" autofocus
+      value="pikachu">
+  </div>
+
+  <div class="has-text-centered" id="checkboxes">
+  </div>
+
+  <div class="widgets has-text-centered mt-5">
+    <button class="button is-success" id="search">Find that Pokémon!</button>
+  </div>
+  <div class="is-size-8 has-text-success has-text-centered mt-5" id="status">Ready to Search!</div>
+  <hr>
+  <h2 class="has-text-danger is-size-5 ml-3">Pokémon</h2>
+  <div id="content"></div>
+  <div class="field is-grouped">
+    <button class="button is-danger is-light" id="previous">Previous</button>
+    <button class="button is-danger is-light ml-3" id="next">Next</button>
+  </div>
+  <script src="src/hamburger.js"></script>
+  <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
